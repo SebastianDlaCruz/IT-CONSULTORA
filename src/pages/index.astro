@@ -1,0 +1,96 @@
+---
+import "../../public/styles/pages/index.css";
+import Hero from "../components/hero/Hero.astro";
+import ItemServices from "../components/item-services/Item-services.astro";
+import SubHeader from "../components/sub-header/SubHeader.astro";
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+  <main>
+    <Hero />
+
+    <section id="quines-somos" class="quienes-somos">
+      <SubHeader title="Quienes Somos" />
+
+      <article class="quienes-somos__article">
+        <picture>
+          <source
+            media="(min-width: 930px)"
+            srcset="/img/quienes-somos-desktop.webp"
+          />
+          <img src="/img/quienes-somos-movil.webp" alt="quienes somos" />
+        </picture>
+
+        <section>
+          <p class="quienes-somos__paragraph">
+            Somos una empresa que desarrolla software de <span
+              >alta calidad</span
+            >
+            , a la medida de cada necesidad, combinando innovación, tecnología y
+            experiencia humana. Nos apasiona resolver problemas complejos con código
+            elegante, interfaces intuitivas y sistemas escalables que impulsen el
+            crecimiento de nuestros clientes.
+          </p>
+
+          <article>
+            <header>
+              <h3>¿Por qué elegirnos?</h3>
+            </header>
+
+            <ul>
+              <li>
+                Enfoque personalizado: Escuchamos, analizamos y luego
+                programamos.
+              </li>
+              <li>
+                Tecnología de vanguardia: Usamos las mejores herramientas y
+                metodologías ágiles.
+              </li>
+              <li>
+                Compromiso con resultados: Tu éxito es nuestra métrica principal
+              </li>
+            </ul>
+          </article>
+        </section>
+      </article>
+    </section>
+
+    <section id="servicios">
+      <SubHeader title="Servicios" />
+
+      <section>
+        <ItemServices
+          title="Desarrollo de Software a Medida"
+          srcset="/icons/DS-desktop.svg"
+          src="/icons/DS-movil.svg"
+          paragraph="Creamos aplicaciones web y móviles desde cero,  diseñadas exclusivamente para tus necesidades. Desde plataformas  empresariales hasta apps innovadoras, usamos tecnologías modernas  (Angular, Node.js, React y Laravel.) para garantizar escalabilidad, seguridad y alto rendimiento."
+        />
+
+        <ItemServices
+          title="Mantenimiento y Soporte Técnico"
+          srcset="/icons/MST-desktop.svg"
+          src="/icons/MST-movil.svg"
+          paragraph="Ofrecemos soporte continuo para garantizar que tu  software funcione sin errores, se actualice y esté protegido. Incluye  corrección de bugs, actualizaciones de seguridad, optimización de  rendimiento y monitoreo."
+        />
+
+        <ItemServices
+          title="Optimización y Modernización"
+          srcset="/icons/OM-desktop.svg"
+          src="/icons/OM-movil.svg"
+          paragraph='¿Tu aplicación es lenta o está obsoleta? La rediseñamos y optimizamos con mejoras de UI/UX, migración a tecnologías actuales (ej: de PHP  legacy a Laravel) o refactorización de código. Ideal para proyectos que  necesitan un "renacimiento digital".'
+        />
+
+        <ItemServices
+          title="Integración de APIs y Sistemas"
+          srcset="/icons/IAS-desktop.svg"
+          src="/icons/IAS-movil.svg"
+          paragraph="Conectamos tu software con herramientas externas (pagos, CRM, ERP) o  desarrollamos APIs personalizadas para unificar tus procesos.  Automatizamos flujos de trabajo y mejoramos la interoperabilidad."
+        />
+      </section>
+    </section>
+  </main>
+</Layout>

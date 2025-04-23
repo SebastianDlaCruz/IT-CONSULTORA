@@ -1,0 +1,21 @@
+:root{
+  --color-g4:#373737;
+  --color-g3:#525252;
+  --color-g2:#969696;
+  --color-g1:#C2C2C2;
+  --color-white:#FFFFFF;
+  --color-black:#000000;
+  --color-pink:#ED0B65;
+  --color-mustard:#B2A700;
+  --color-yellow:#FCAE11;
+  --color-purple:#760493a8;
+
+  --translate-menu:1s ease-out;
+
+  --paragraph-1: 65px;
+  --paragraph-2: 52px;
+  --paragraph-3: 32px;
+  --paragraph-4: 16px;
+
+
+}

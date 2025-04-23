@@ -1,0 +1,16 @@
+---
+const { title, srcset, src, paragraph } = Astro.props;
+---
+
+<article>
+  <picture>
+    <source media="(min-width: 930px)" srcset={srcset} />
+    <img src={src} alt={title} />
+  </picture>
+
+  <header>{title}</header>
+
+  <div>
+    <p>{paragraph}</p>
+  </div>
+</article>

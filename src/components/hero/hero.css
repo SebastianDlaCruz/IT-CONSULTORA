@@ -1,0 +1,47 @@
+.hero-section{
+  position: relative;
+}
+
+.hero-section__circle-hero{
+  position: absolute;
+  inset-block-start: 37%;
+  inset-inline-end: -30%;
+
+}
+
+
+.hero-section__container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-section__container hgroup{
+  order: 2;
+}
+
+.hero-section__container  img{
+  border-radius: 4px;
+}
+
+.hero-section__hgroup{
+  height: 264px;
+  text-align: center;
+}
+
+.hero-section__hgroup h1 {
+  position: absolute;
+  top: 13%;
+  color: var(--color-white);
+  font-size: var(--paragraph-1);
+}
+
+.hero-section__hgroup h3{
+  margin-top: 87px;
+  color: var(--color-g1);
+  font-size: var(--paragraph-3);
+}
+
+.digital{
+  color:var(--color-pink);
+}

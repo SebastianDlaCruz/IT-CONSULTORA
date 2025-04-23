@@ -1,0 +1,21 @@
+.quienes-somos{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.quienes-somos__article{
+  line-height: 44px;
+  letter-spacing: 3%;
+  text-align: center;
+  background-color: var(--color-pink);
+}
+
+.quienes-somos__paragraph,
+.quienes-somos__paragraph + article{
+  color:var(--color-white);
+}
+
+.quienes-somos__paragraph + article  ul li {
+  list-style-type: disc;
+}

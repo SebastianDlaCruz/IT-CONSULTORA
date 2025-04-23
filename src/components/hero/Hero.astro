@@ -1,0 +1,37 @@
+---
+import "./hero.css";
+---
+
+<section id="inicio" class="hero-section">
+  <div class="hero-section__container">
+    <hgroup class="hero-section__hgroup">
+      <h1>
+        Expertos en convertir problemas en soluciones <span class="digital"
+          >digitales</span
+        >
+      </h1>
+      <h3>
+        Desarrollamos soluciones digitales a medida para potenciar tu negocio
+      </h3>
+    </hgroup>
+
+    <picture>
+      <source media="(min-width: 930px)" srcset="/img/hero-img-desktop.webp" />
+      <img src="/img/hero-img-movil.webp" alt="hero.img" />
+    </picture>
+  </div>
+
+  <picture>
+    <source
+      media="(min-width: 930px)"
+      srcset="/icons/circle-hero-desktop.svg"
+    />
+    <img
+      src="/icons/circle-hero-movil.svg"
+      alt="circle-hero"
+      class="hero-section__circle-hero"
+    />
+  </picture>
+
+  <hr />
+</section>
