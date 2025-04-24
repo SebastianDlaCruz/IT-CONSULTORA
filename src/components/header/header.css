@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 130px;
-  padding: 0 1em;
+  padding-inline: var(--padding-inline);
   z-index: 1;
   
 }
@@ -59,4 +59,29 @@
 .header-figure__caption strong{
   color:var(--color-white);
   font-size: var(--paragraph-3);
+}
+
+@media screen and (min-width: 930px){
+  
+  .header-hamburger{
+    display:none
+  }
+
+  .header-nav{
+    position: relative;
+    height: 56px;
+    width: 693px;
+    background-color: transparent;
+    transform: translateX(0%);
+  }
+
+  .header-nav__menu{
+    flex-direction: row;
+    height: inherit;
+    gap: 105px;
+  }
+
+  .header-nav__clear{
+    display: none;
+  }
 }

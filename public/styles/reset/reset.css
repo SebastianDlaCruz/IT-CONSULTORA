@@ -9,7 +9,6 @@
 body{
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 0px 1.5em;
   margin: 0px;
   background-color: var(--color-g4);
 }
@@ -30,4 +29,9 @@ button{
 
 a{
   text-decoration: none;
+}
+
+hr{
+  border:5px solid var(--color-white);
+  color:var(--color-white);
 }

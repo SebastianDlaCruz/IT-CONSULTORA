@@ -1,0 +1,31 @@
+.footer{
+  position: relative;
+  min-height: 315px;
+  margin-top: 39px;
+  padding-inline: var(--padding-inline);
+  color:var(--color-white);
+  background-color: var(--color-g3);
+  overflow: hidden;
+}
+
+.footer .footer-container-figure{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .footer-container-figure figure{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .circle-footer{
+  position: absolute;
+  inset-block:52%;
+  inset-inline-end: -13%;
+}
+
+.footer p{
+  line-height: 240px;
+  text-align: center;
+}

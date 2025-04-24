@@ -17,5 +17,7 @@
   --paragraph-3: 32px;
   --paragraph-4: 16px;
 
+  --padding-inline:4.5em;
 
+  --media-inline: 930px;
 }

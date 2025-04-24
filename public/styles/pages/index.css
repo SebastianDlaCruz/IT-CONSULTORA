@@ -1,3 +1,7 @@
+main{
+  padding-inline: var(--padding-inline);
+}
+
 .quienes-somos{
   display: flex;
   flex-wrap: wrap;
@@ -18,4 +22,17 @@
 
 .quienes-somos__paragraph + article  ul li {
   list-style-type: disc;
+}
+
+.services div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.hr-hero{
+  position: absolute;
+  inset-block-end: 1%;
+  inset-inline: 0;
 }

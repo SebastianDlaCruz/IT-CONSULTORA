@@ -1,14 +1,19 @@
 ---
+import "./item-services.css";
 const { title, srcset, src, paragraph } = Astro.props;
 ---
 
-<article>
-  <picture>
-    <source media="(min-width: 930px)" srcset={srcset} />
-    <img src={src} alt={title} />
-  </picture>
+<article class="item-services">
+  <div class="item-services__container flex-center">
+    <picture>
+      <source media="(min-width: 930px)" srcset={srcset} />
+      <img src={src} alt={title} />
+    </picture>
+  </div>
 
-  <header>{title}</header>
+  <header class="item-services__header">
+    <h3>{title}</h3>
+  </header>
 
   <div>
     <p>{paragraph}</p>

@@ -1,0 +1,35 @@
+.item-services{
+  position: relative;
+  height: 284px;
+  width: 404px;
+  color:var(--color-g3);
+  background-color: var(--color-g1);
+}
+.item-services header,
+.item-services div{
+  text-align: center;
+}
+
+.item-services__header{
+  padding-top: 1.7em;
+}
+
+.item-services__header h3{
+  font-size: var(--paragraph-3);
+  color:var(--color-g4);
+}
+
+.item-services__container{
+  --size:122px;
+  position: absolute;
+  top: -24.49%;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  background-color: var(--color-g3);
+} 
+
+.item-services div p{
+  font-size: var(--paragraph-4);
+  color:var(--color-g3);
+}

@@ -13,6 +13,8 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <Hero />
 
+    <hr class="hr-hero" />
+
     <section id="quines-somos" class="quienes-somos">
       <SubHeader title="Quienes Somos" />
 
@@ -59,10 +61,10 @@ import Layout from "../layouts/Layout.astro";
       </article>
     </section>
 
-    <section id="servicios">
+    <section id="servicios" class="services">
       <SubHeader title="Servicios" />
 
-      <section>
+      <div>
         <ItemServices
           title="Desarrollo de Software a Medida"
           srcset="/icons/DS-desktop.svg"
@@ -90,7 +92,8 @@ import Layout from "../layouts/Layout.astro";
           src="/icons/IAS-movil.svg"
           paragraph="Conectamos tu software con herramientas externas (pagos, CRM, ERP) o  desarrollamos APIs personalizadas para unificar tus procesos.  Automatizamos flujos de trabajo y mejoramos la interoperabilidad."
         />
-      </section>
+      </div>
     </section>
   </main>
+  <hr />
 </Layout>

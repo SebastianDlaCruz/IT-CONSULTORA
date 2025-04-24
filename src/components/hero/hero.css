@@ -1,12 +1,12 @@
 .hero-section{
   position: relative;
+  overflow: hidden;
 }
 
 .hero-section__circle-hero{
   position: absolute;
   inset-block-start: 37%;
   inset-inline-end: -30%;
-
 }
 
 
@@ -31,7 +31,7 @@
 
 .hero-section__hgroup h1 {
   position: absolute;
-  top: 13%;
+  top: 26%;
   color: var(--color-white);
   font-size: var(--paragraph-1);
 }
@@ -44,4 +44,39 @@
 
 .digital{
   color:var(--color-pink);
+}
+
+@media screen and (min-width: 930px){
+
+  .hero-section__container{
+    align-items: center;
+  }
+
+  .hero-section__hgroup{
+    height: 366px;
+    width: 560px;
+    text-align: left;
+  }
+
+  .hero-section__hgroup h1 {
+    position: absolute;
+    width: 875px;
+  }
+
+  .hero-section__hgroup h3 {
+    position: relative;
+    margin-top: 247px;
+  }
+
+  
+  .hero-section__container picture{
+    order: 2;
+  }
+
+  .hero-section__circle-hero{
+    inset-block-start: 67%;
+    inset-inline:40%;
+
+  }
+
 }
