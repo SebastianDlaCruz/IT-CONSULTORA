@@ -13,19 +13,23 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <Hero />
 
-    <hr class="hr-hero" />
-
-    <section id="quines-somos" class="quienes-somos">
+    <section id="quines-somos" class="section quienes-somos margin-top">
       <SubHeader title="Quienes Somos" />
 
       <article class="quienes-somos__article">
-        <picture>
-          <source
-            media="(min-width: 930px)"
-            srcset="/img/quienes-somos-desktop.webp"
-          />
-          <img src="/img/quienes-somos-movil.webp" alt="quienes somos" />
-        </picture>
+        <div>
+          <picture>
+            <source
+              media="(min-width: 930px)"
+              srcset="/img/quienes-somos-desktop.webp"
+            />
+            <img
+              src="/img/quienes-somos-movil.webp"
+              alt="quienes somos"
+              class="quines-somos__img"
+            />
+          </picture>
+        </div>
 
         <section>
           <p class="quienes-somos__paragraph">
@@ -61,10 +65,10 @@ import Layout from "../layouts/Layout.astro";
       </article>
     </section>
 
-    <section id="servicios" class="services">
+    <section id="servicios" class="section services margin-top">
       <SubHeader title="Servicios" />
 
-      <div>
+      <div class="margin-top">
         <ItemServices
           title="Desarrollo de Software a Medida"
           srcset="/icons/DS-desktop.svg"

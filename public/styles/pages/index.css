@@ -2,18 +2,26 @@ main{
   padding-inline: var(--padding-inline);
 }
 
-.quienes-somos{
-  display: flex;
-  flex-wrap: wrap;
- 
-}
 
 .quienes-somos__article{
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  height: 945px;
   line-height: 44px;
   letter-spacing: 3%;
   text-align: center;
   background-color: var(--color-pink);
 }
+
+.quienes-somos__article div{
+  position: relative;
+  min-height: 343px;
+  width: 516px;
+
+}
+
 
 .quienes-somos__paragraph,
 .quienes-somos__paragraph + article{
@@ -26,13 +34,36 @@ main{
 
 .services div{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap:9rem;
+  margin-bottom: 40px;
 }
 
-.hr-hero{
-  position: absolute;
-  inset-block-end: 1%;
-  inset-inline: 0;
+
+
+@media screen and (min-width: 930px){
+
+  .quienes-somos__article{
+    height:778px;
+    width: 1266px;
+    gap:56px; 
+  }
+  .quienes-somos__article section{
+    height: 557px;
+    width: 694px;
+  }
+
+  .quienes-somos__article div {
+    position: relative;
+    height: 896px;
+    width: 516px;
+  }
+
+  .quines-somos__img{
+    position: absolute;
+    top:-8%;
+    inset-inline: 0;
+  }
+  
 }

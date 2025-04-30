@@ -46,6 +46,13 @@
   color:var(--color-pink);
 }
 
+.hr-hero{
+  position: absolute;
+  inset-block-end: 1%;
+  inset-inline: 0;
+  
+}
+
 @media screen and (min-width: 930px){
 
   .hero-section__container{
