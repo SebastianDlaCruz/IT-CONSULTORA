@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 130px;
-  padding-inline: var(--padding-inline);
+  padding-inline: clamp(1.5rem,6%,3.5rem);
   z-index: 1;
   
 }
@@ -61,7 +61,7 @@
   font-size: var(--paragraph-3);
 }
 
-@media screen and (min-width: 948px){
+@media screen and (min-width: 1024px){
   
   .header-hamburger{
     display:none

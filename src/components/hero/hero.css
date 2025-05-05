@@ -53,7 +53,7 @@
   
 }
 
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1024px){
 
   .hero-section__container{
     align-items: center;
@@ -61,7 +61,7 @@
 
   .hero-section__hgroup{
     height: 366px;
-    width: 560px;
+    width: 528px;
     text-align: left;
   }
 

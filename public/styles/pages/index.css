@@ -8,25 +8,28 @@ main{
   flex-wrap: wrap; 
   align-items: center;
   justify-content: center;
-  height: 945px;
+  height: 857px;
   line-height: 44px;
   letter-spacing: 3%;
   text-align: center;
   background-color: var(--color-pink);
 }
 
-.quienes-somos__article div{
+.quienes-somos__img-container{
   position: relative;
-  min-height: 343px;
-  width: 516px;
-
+  
 }
 
+.quienes-somos__text-container{
+  padding:0 10px;  
+
+}
 
 .quienes-somos__paragraph,
 .quienes-somos__paragraph + article{
   color:var(--color-white);
 }
+
 
 .quienes-somos__paragraph + article  ul li {
   list-style-type: disc;
@@ -36,33 +39,32 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap:9rem;
+  gap:7rem;
   margin-bottom: 40px;
 }
 
 
 
-@media screen and (min-width: 930px){
+@media screen and (min-width: 1440px){
 
-  .quienes-somos__article{
-    height:778px;
-    width: 1266px;
-    gap:56px; 
-  }
-  .quienes-somos__article section{
-    height: 557px;
-    width: 694px;
-  }
-
-  .quienes-somos__article div {
-    position: relative;
+  .quienes-somos__img-container{
     height: 896px;
     width: 516px;
+    
   }
-
+  
+  .quienes-somos__text-container{
+    height: 595px;
+    width: 694px;
+     
+  
+  }
+  .quienes-somos__article{
+    height: 757px;
+  }
   .quines-somos__img{
     position: absolute;
-    top:-8%;
+    top:-5%;
     inset-inline: 0;
   }
   
