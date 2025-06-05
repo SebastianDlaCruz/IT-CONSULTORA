@@ -1,7 +1,7 @@
 .item-services{
   position: relative;
-  min-height: clamp(284px,56vw,393px) ; 
-  width:  clamp(404px,39vw,560px);
+  min-height: clamp(284px,calc(275px + 4vw),393px); 
+  max-width: clamp(404px,calc(395px + 4vw), 560px);
   color:var(--color-g3);
   padding: 1rem;
   background-color: var(--color-g1);
@@ -21,12 +21,13 @@
 .item-services__header{
   display: grid;
   place-content: center;
-  padding-top: 3.6em;
+
 }
 
 .item-services__header h3{
   height: 70px;
   max-width: 332px;
+  margin-top: 44px;
   line-height: 44px;
   letter-spacing: 3%;
   font-size: var(--paragraph-3);
@@ -34,9 +35,10 @@
 }
 
 .item-services__container{
-  --size: clamp(122px,12vw,169px);
+  --size: clamp(122px,calc(90px + 4vw),169px);
   position: absolute;
   top: -21%;
+  left: 0%;
   height: var(--size);
   width: var(--size);
   border-radius: 50%;
@@ -44,6 +46,14 @@
 } 
 
 .item-services div p{
-  font-size: var(--paragraph-4);
-  color:var(--color-g3);
+   color:var(--color-g3);
+}
+
+
+@media screen and (min-width: 1024px){
+.item-services{
+  /* height: 393px ; 
+  width:  560px; */
+}
+
 }

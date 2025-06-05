@@ -11,6 +11,7 @@ body{
   min-height: 100vh;
   margin: 0px;
   background-color: var(--color-g4);
+  font-size:var(--step-paragraph);
 }
 
 ul,li{

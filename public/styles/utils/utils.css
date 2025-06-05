@@ -8,3 +8,31 @@
 .margin-top{
   margin-top: 2rem;
 }
+
+
+
+.gabarito-title {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gabarito-sub-title{
+     font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.gabarito-paragraph {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+

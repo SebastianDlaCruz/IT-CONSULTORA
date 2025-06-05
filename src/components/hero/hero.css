@@ -1,12 +1,11 @@
 .hero-section{
   position: relative;
-  overflow: hidden;
 }
 
 .hero-section__circle-hero{
   position: absolute;
   inset-block-start: 37%;
-  inset-inline-end: -30%;
+  inset-inline-end: -53%;
 }
 
 
@@ -33,7 +32,7 @@
   position: absolute;
   top: 26%;
   color: var(--color-white);
-  font-size: var(--paragraph-1);
+  font-size: var(--step-title);
 }
 
 .hero-section__hgroup h3{
